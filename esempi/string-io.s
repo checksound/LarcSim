@@ -20,7 +20,7 @@ syscall
 
 li $1 100       # address of memory location
 lw $2 $1        # read value into register 2
-beqz $2 10      # jump to halt if the value is zero
+beqz $2 9      # jump to halt if the value is zero
 
 # Otherwise, output the user's string, followed by an end-of-line
 
