@@ -9,11 +9,17 @@ li $2 7
 # nel PC (Program Counter) 
 jalr $9 $1
 
+# controlla il valore registro 10 dovrebbe essere 49 (7 * 7)
+
 li $2 10
 jalr $9 $1
 
+# controlla il valore registro 10 dovrebbe essere 100 (10 * 10)
+
 li $2 3
 jalr $9 $1
+
+# controlla il valore registro 10 dovrebbe essere 9 (3 * 3)
 
 li $1 0         # trap number for Halt
 syscall         # halt
